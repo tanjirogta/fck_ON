@@ -4,11 +4,15 @@
   "description": "We don't like this suspicious notetaking programm from Microsoft. So that is why we are developing an open source notetaking-software, which just make sense and is usable for nerds like us. Well I guess it won't be very usable and more likely very shitty but we don't care.",
   "main": "main.js",
   "scripts": {
+    "dev": "concurrently \"npm run dev --prefix frontend\" \"wait-on http://localhost:5173 && electron .\"",
+    "build": "npm run build --prefix frontend",
     "start": "electron ."
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^36.2.0"
+    "concurrently": "^9.1.2",
+    "electron": "^36.2.0",
+    "wait-on": "^8.0.3"
   }
 }
