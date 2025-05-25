@@ -6,13 +6,40 @@
   "scripts": {
     "dev": "concurrently \"npm run dev --prefix frontend\" \"wait-on http://localhost:5173 && electron .\"",
     "build": "npm run build --prefix frontend",
-    "start": "electron ."
+    "start": "electron .",
+    "dist": "npm run build --prefix frontend && electron-builder"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^9.1.2",
     "electron": "^36.2.0",
-    "wait-on": "^8.0.3"
+    "wait-on": "^8.0.3",
+    "electron-builder": "^24.14.1"
+  },
+  "build": {
+    "appId": "com.fckon.app",
+    "productName": "FCKon",
+    "directories": {
+      "buildResources": "icons"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "frontend/dist/**/*",
+      "icons/**/*"
+    ],
+    "extraMetadata": {
+      "main": "main.js"
+    },
+    "mac": {
+      "icon": "icons/icon.icns"
+    },
+    "win": {
+      "icon": "icons/icon.ico"
+    },
+    "linux": {
+      "icon": "icons/icon.png"
+    }
   }
 }
