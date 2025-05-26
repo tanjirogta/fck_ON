@@ -179,6 +179,11 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
+"@popperjs/core@^2.11.8":
+  version "2.11.8"
+  resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.8.tgz#6b79032e760a0899cd4204710beede972a3a185f"
+  integrity sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==
+
 "@rollup/rollup-android-arm-eabi@4.41.1":
   version "4.41.1"
   resolved "https://registry.yarnpkg.com/@rollup/rollup-android-arm-eabi/-/rollup-android-arm-eabi-4.41.1.tgz#f39f09f60d4a562de727c960d7b202a2cf797424"
@@ -319,6 +324,13 @@
     kleur "^4.1.5"
     magic-string "^0.30.15"
     vitefu "^1.0.4"
+
+"@sveltestrap/sveltestrap@^7.1.0":
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/@sveltestrap/sveltestrap/-/sveltestrap-7.1.0.tgz#7226d9396f23323cb5464fd9ce2e508bba5041c3"
+  integrity sha512-TpIx25kqLV+z+VD3yfqYayOI1IaCeWFbT0uqM6NfA4vQgDs9PjFwmjkU4YEAlV/ngs9e7xPmaRWE7lkrg4Miow==
+  dependencies:
+    "@popperjs/core" "^2.11.8"
 
 "@types/estree@1.0.7", "@types/estree@^1.0.5", "@types/estree@^1.0.6":
   version "1.0.7"
@@ -804,7 +816,7 @@ supports-color@^8.1.1:
   dependencies:
     has-flag "^4.0.0"
 
-svelte@^5.28.1:
+svelte@^5.33.2:
   version "5.33.2"
   resolved "https://registry.yarnpkg.com/svelte/-/svelte-5.33.2.tgz#02724348474398d91481ca4ac1ac55304d103f9a"
   integrity sha512-uiyusx2rUa9NmVMaIcShnZyDhOfFXxgkn5eXOcgjDBL3RYQGR1+7TctPcI6AWNbu4gHWF5xZ/TlFM7nnw5H+JQ==
