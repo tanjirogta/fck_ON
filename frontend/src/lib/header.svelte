@@ -22,21 +22,13 @@
 </script>
 
 <Navbar color="dark" dark expand="md" container={false} class="fixed-top w-100">
-    <NavbarBrand href="/">
-        <img src="../assets/icon_512x512.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top me-2" />
-        Crying Obsidian
+    <NavbarBrand href="/" class="d-flex align-items-center">
+        <img src="/icon_512x512.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-top me-2 margine-logoimg-20" />
+        <p>Crying Obsidian</p>
     </NavbarBrand>
     <NavbarToggler on:click={() => (isOpen = !isOpen)} />
     <Collapse {isOpen} navbar expand="md" on:update={handleUpdate}>
         <Nav class="ms-auto" navbar>
-            <NavItem>
-                <NavLink href="/">Lorem</NavLink>
-            </NavItem>
-            <NavItem>
-                <NavLink href="/"
-                    >Ipsum</NavLink
-                >
-            </NavItem>
             <Dropdown nav inNavbar>
                 <DropdownToggle nav caret>Options</DropdownToggle>
                 <DropdownMenu end>
@@ -49,3 +41,11 @@
         </Nav>
     </Collapse>
 </Navbar>
+
+<style>
+    .margine-logoimg-20 {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: -6px;
+    }
+</style>
