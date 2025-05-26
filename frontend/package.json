@@ -14,5 +14,10 @@
     "svelte": "^5.28.1",
     "vite": "^6.3.5",
     "wait-on": "^8.0.3"
+    "svelte": "^5.33.2",
+    "vite": "^6.3.5"
+  },
+  "dependencies": {
+    "@sveltestrap/sveltestrap": "^7.1.0"
   }
 }
